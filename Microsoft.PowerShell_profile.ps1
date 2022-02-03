@@ -7,10 +7,10 @@ $currentFolder= Split-Path -Path $pwd -Leaf
 $psVersionMajor= $host.Version.Major # PowerShell Version
 $psVersionMinor= $host.Version.Minor # PowerShell Version Patch
 
-# Write-host "$currentUser in ../$currentFolder"
+# Show "$currentUser in ../$currentFolder"
 Write-host $currentUser -ForegroundColor Cyan -NoNewline
 Write-host " in " -ForegroundColor White -NoNewline
 Write-host "../$currentFolder" -ForegroundColor Green
 
 function prompt { "$psVersionMajor.$psVersionMinor > "}
-
+# Promp: $VERSION + " > "
